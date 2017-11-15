@@ -9,27 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>EagleSDK.xcscheme</key>
+		<key>Pods-TestFrameWork_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Masonry.xcscheme</key>
+		<key>Pods-TestFrameWork_Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-EagleSDK_Example.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-EagleSDK_Tests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SSZipArchive.xcscheme</key>
+		<key>TestFrameWork.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

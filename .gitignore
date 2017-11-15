@@ -1,29 +1,26 @@
 # OS X
-*~
 .DS_Store
-*.xcuserstate
-*.xcuserdata
 
 # Xcode
-#build/
-#*.pbxuser
-#!default.pbxuser
-#*.mode1v3
-#!default.mode1v3
-#*.mode2v3
-#!default.mode2v3
-#*.perspectivev3
-#!default.perspectivev3
-#xcuserdata/
-#*.xccheckout
-#profile
-#*.moved-aside
-#DerivedData
-#*.hmap
-#*.ipa
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+profile
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
 
 # Bundler
-#.bundle
+.bundle
 
 Carthage
 # We recommend against adding the Pods directory to your .gitignore. However
@@ -33,5 +30,4 @@ Carthage
 # Note: if you ignore the Pods directory, make sure to uncomment
 # `pod install` in .travis.yml
 #
-i# Pods/
-./Example/Pods
+# Pods/

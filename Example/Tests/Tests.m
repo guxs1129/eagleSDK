@@ -1,8 +1,8 @@
 //
-//  EagleSDKTests.m
-//  EagleSDKTests
+//  TestFrameWorkTests.m
+//  TestFrameWorkTests
 //
-//  Created by guxs1129@163.com on 11/10/2017.
+//  Created by guxs1129@163.com on 11/15/2017.
 //  Copyright (c) 2017 guxs1129@163.com. All rights reserved.
 //
 

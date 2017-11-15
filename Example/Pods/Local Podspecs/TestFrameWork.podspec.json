@@ -1,0 +1,28 @@
+{
+  "name": "TestFrameWork",
+  "version": "0.1.0",
+  "summary": "A short description of TestFrameWork.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/guxs1129@163.com/TestFrameWork",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "guxs1129@163.com": "guxs@linkstec.com"
+  },
+  "source": {
+    "git": "/Users/guxinsheng/WorkStation/playground/TestFrameWork",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TestFrameWork/Classes/**/*",
+  "public_header_files": "TestFrameWork/Classes/*.h",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ]
+  }
+}

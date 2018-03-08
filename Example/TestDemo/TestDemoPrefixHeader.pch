@@ -1,0 +1,22 @@
+//
+//  TestDemoPrefixHeader.pch
+//  TestDemo
+//
+//  Created by 顾新生 on 2017/11/24.
+//  Copyright © 2017年 guxs1129@163.com. All rights reserved.
+//
+
+#ifndef TestDemoPrefixHeader_pch
+#define TestDemoPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TestDemoPrefixHeader_pch */
+#ifdef __OBJC__
+@import UIKit;
+@import Foundation;
+
+@import EagleSDK;
+//    #import <EagleSDK/Eagle.h>
+#endif

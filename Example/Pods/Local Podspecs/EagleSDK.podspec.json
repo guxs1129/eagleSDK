@@ -1,0 +1,111 @@
+{
+  "name": "EagleSDK",
+  "version": "0.0.1",
+  "summary": "EagleSDK of Linkstec.",
+  "description": "This is Linkstec's Product.",
+  "homepage": "http://www.linkstec.com",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "linkstec@linkstec.com": "linkstec@linkstec.com"
+  },
+  "source": {
+    "git": "ssh://git@192.168.2.94:10022/project/ios/eagle-base.git",
+    "branch": "dev-navi-slide"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EagleSDK/Classes/**/*",
+  "public_header_files": [
+    "EagleSDK/Classes/**/*.h",
+    "EagleSDK/Classes/*.h"
+  ],
+  "prefix_header_contents": [
+    "#import \"EGComponent.h\"",
+    "#import \"EGDom.h\"",
+    "#import \"EGMacros.h\"",
+    "#import \"EGNode.h\"",
+    "#import \"UIViewController+EGComponent.h\"",
+    "#import \"EagleSDK.h\"",
+    "#import \"EGkit.h\"",
+    "#import \"EGkitManager.h\"",
+    "#import \"EGButton.h\"",
+    "#import \"EGController.h\"",
+    "#import \"EGImageView.h\"",
+    "#import \"EGLabel.h\"",
+    "#import \"EGTableView.h\"",
+    "#import \"EGTextComponent.h\"",
+    "#import \"EGTrash.h\"",
+    "#import \"EGView.h\"",
+    "#import \"EGEvent.h\"",
+    "#import \"EGEventBus.h\"",
+    "#import \"EGEventContext.h\"",
+    "#import \"EGEventExcuter.h\"",
+    "#import \"NSObject+EventBus.h\"",
+    "#import \"EGNavigationBarManager.h\"",
+    "#import \"EGNaviSlideApp.h\"",
+    "#import \"EGBaseRequest.h\"",
+    "#import \"EGBatchRequest.h\"",
+    "#import \"EGBatchRequestAgent.h\"",
+    "#import \"EGChainRequest.h\"",
+    "#import \"EGChainRequestAgent.h\"",
+    "#import \"EGNetwork.h\"",
+    "#import \"EGNetworkAgent.h\"",
+    "#import \"EGNetworkConfig.h\"",
+    "#import \"EGNetworkPrivate.h\"",
+    "#import \"EGRequest.h\"",
+    "#import \"EGPopView.h\"",
+    "#import \"EGRootNavigationController.h\"",
+    "#import \"UIViewController+EGRootNavigationController.h\"",
+    "#import \"EGRouter.h\"",
+    "#import \"EGRouterManager+Blocks.h\"",
+    "#import \"EGRouterManager.h\"",
+    "#import \"EGSanboxFile.h\"",
+    "#import \"EGURLProtocol.h\"",
+    "#import \"EGWebViewController.h\"",
+    "#import \"NSObject+WebComponent.h\"",
+    "#import \"NSURLProtocol+WKWebVIew.h\"",
+    "#import \"WebComponent.h\"",
+    "#import \"WebViewJavascriptBridge.h\"",
+    "#import \"WebViewJavascriptBridgeBase.h\"",
+    "#import \"WKWebViewJavascriptBridge.h\"",
+    "#import \"EGNaviSlideApp.h\"",
+    "#import \"EGURL.h\"",
+    "#import \"EGComponentJsonParser.h\"",
+    "#import \"EGVCJsonBuilderManager.h\""
+  ],
+  "frameworks": [
+    "UIKit",
+    "MapKit",
+    "WebKit",
+    "SystemConfiguration",
+    "MobileCoreServices"
+  ],
+  "libraries": "z",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.1.0"
+    ],
+    "SSZipArchive": [
+
+    ],
+    "Masonry": [
+      "~> 1.1.0"
+    ],
+    "MMDrawerController": [
+      "~> 0.6.0"
+    ],
+    "ReactiveObjC": [
+      "~> 3.0.0"
+    ],
+    "EGIconFont": [
+      "0.0.1"
+    ],
+    "TZImagePickerController": [
+
+    ]
+  }
+}

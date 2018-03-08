@@ -1,0 +1,6 @@
+framework module EagleSDK {
+  umbrella header "EagleSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

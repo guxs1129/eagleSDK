@@ -1,0 +1,36 @@
+source 'ssh://git@192.168.2.94:10022/repertory/cocoapods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+platform:ios, '8.0'
+
+use_frameworks!
+abstract_target 'Root' do
+    pod 'EagleSDK', :path => '../'
+    pod 'AFNetworking', '~> 3.1.0'
+    pod 'SSZipArchive'
+    pod 'Masonry', '~> 1.1.0'
+    pod 'MMDrawerController', '~> 0.6.0'
+    pod 'ReactiveObjC', '~> 3.0.0'
+    pod 'PYSearch', '~> 0.8.7'
+    pod 'EGIconFont'
+    target 'EagleSDK_Example' do
+    end
+      
+    target 'EagleSDK_Tests' do
+    end
+    
+    target 'TestDemo' do
+    end
+    
+    target 'ChainKitDemo' do
+        pod 'EagleSDK', :path => '../'
+        # pod 'AFNetworking', '~> 3.1.0'
+        # pod 'SSZipArchive'
+        # pod 'Masonry', '~> 1.1.0'
+        # pod 'ReactiveObjC', '~> 3.0.0'
+        # pod 'EGIconFont'
+        pod 'EGAutoMenu'
+        # pod 'EGScanCode'
+        pod 'Toast', '~> 4.0.0'
+        # pod 'SDWebImage', '~> 4.0.0'
+    end
+end

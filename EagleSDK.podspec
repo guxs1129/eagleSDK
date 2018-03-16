@@ -30,7 +30,7 @@ This is Linkstec's Product.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'EagleSDK/Classes/**/*'
+  #s.source_files = 'EagleSDK/Classes/**/*'
 
   # s.resource_bundles = {
   #   'EagleSDK' => ['EagleSDK/Assets/*.png']
@@ -44,8 +44,8 @@ This is Linkstec's Product.
 #  end
 
 
-  s.public_header_files = 'EagleSDK/Classes/**/*.h', 'EagleSDK/Classes/*.h'
-s.prefix_header_contents = '#import "EGComponent.h"', '#import "EGDom.h"', '#import "EGMacros.h"', '#import "EGNode.h"', '#import "UIViewController+EGComponent.h"', '#import "EagleSDK.h"', '#import "EGkit.h"', '#import "EGkitManager.h"', '#import "EGButton.h"', '#import "EGController.h"', '#import "EGImageView.h"', '#import "EGLabel.h"', '#import "EGTableView.h"', '#import "EGTextComponent.h"', '#import "EGTrash.h"', '#import "EGView.h"', '#import "EGEvent.h"', '#import "EGEventBus.h"', '#import "EGEventContext.h"', '#import "EGEventExcuter.h"', '#import "NSObject+EventBus.h"', '#import "EGNavigationBarManager.h"', '#import "EGNaviSlideApp.h"', '#import "EGBaseRequest.h"', '#import "EGBatchRequest.h"', '#import "EGBatchRequestAgent.h"', '#import "EGChainRequest.h"', '#import "EGChainRequestAgent.h"', '#import "EGNetwork.h"', '#import "EGNetworkAgent.h"', '#import "EGNetworkConfig.h"', '#import "EGNetworkPrivate.h"', '#import "EGRequest.h"', '#import "EGPopView.h"', '#import "EGRootNavigationController.h"', '#import "UIViewController+EGRootNavigationController.h"', '#import "EGRouter.h"', '#import "EGRouterManager+Blocks.h"', '#import "EGRouterManager.h"', '#import "EGSanboxFile.h"', '#import "EGURLProtocol.h"', '#import "EGWebViewController.h"', '#import "NSObject+WebComponent.h"', '#import "NSURLProtocol+WKWebVIew.h"', '#import "WebComponent.h"', '#import "WebViewJavascriptBridge.h"', '#import "WebViewJavascriptBridgeBase.h"', '#import "WKWebViewJavascriptBridge.h"','#import "EGNaviSlideApp.h"','#import "EGURL.h"', '#import "EGComponentJsonParser.h"', '#import "EGVCJsonBuilderManager.h"', '#import "EGChainKitHeader.h"'
+  #s.public_header_files = 'EagleSDK/Classes/**/*.h', 'EagleSDK/Classes/*.h'
+  #s.prefix_header_contents = '#import "EGComponent.h"', '#import "EGDom.h"', '#import "EGMacros.h"', '#import "EGNode.h"', '#import "UIViewController+EGComponent.h"', '#import "EagleSDK.h"', '#import "EGkit.h"', '#import "EGkitManager.h"', '#import "EGButton.h"', '#import "EGController.h"', '#import "EGImageView.h"', '#import "EGLabel.h"', '#import "EGTableView.h"', '#import "EGTextComponent.h"', '#import "EGTrash.h"', '#import "EGView.h"', '#import "EGEvent.h"', '#import "EGEventBus.h"', '#import "EGEventContext.h"', '#import "EGEventExcuter.h"', '#import "NSObject+EventBus.h"', '#import "EGNavigationBarManager.h"', '#import "EGNaviSlideApp.h"', '#import "EGBaseRequest.h"', '#import "EGBatchRequest.h"', '#import "EGBatchRequestAgent.h"', '#import "EGChainRequest.h"', '#import "EGChainRequestAgent.h"', '#import "EGNetwork.h"', '#import "EGNetworkAgent.h"', '#import "EGNetworkConfig.h"', '#import "EGNetworkPrivate.h"', '#import "EGRequest.h"', '#import "EGPopView.h"', '#import "EGRootNavigationController.h"', '#import "UIViewController+EGRootNavigationController.h"', '#import "EGRouter.h"', '#import "EGRouterManager+Blocks.h"', '#import "EGRouterManager.h"', '#import "EGSanboxFile.h"', '#import "EGURLProtocol.h"', '#import "EGWebViewController.h"', '#import "NSObject+WebComponent.h"', '#import "NSURLProtocol+WKWebVIew.h"', '#import "WebComponent.h"', '#import "WebViewJavascriptBridge.h"', '#import "WebViewJavascriptBridgeBase.h"', '#import "WKWebViewJavascriptBridge.h"','#import "EGNaviSlideApp.h"','#import "EGURL.h"', '#import "EGComponentJsonParser.h"', '#import "EGVCJsonBuilderManager.h"', '#import "EGChainKitHeader.h"'
   s.frameworks = 'UIKit', 'MapKit', 'WebKit', 'SystemConfiguration', 'MobileCoreServices'
   s.libraries = 'z'
   s.ios.vendored_frameworks   = ' EagleSDK.framework'

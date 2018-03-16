@@ -1,13 +1,13 @@
 //
 //  NSObject+WebComponent.h
-//  EG
+//  Eagle
 //
 //  Created by 顾新生 on 2017/11/8.
 //  Copyright © 2017年 pantao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "EGEventBus.h"
+#import "EagleEventBus.h"
 #import "NSObject+EventBus.h"
 #import "WebComponent.h"
 @interface NSObject (WebComponent)

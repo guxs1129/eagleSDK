@@ -1,15 +1,14 @@
 //
 //  NSObject+EventBus.h
-//  EGEventBus
+//  EagleEventBus
 //
 //  Created by 顾新生 on 2017/10/13.
 //  Copyright © 2017年 guxinsheng. All rights reserved.
 //
 typedef void(^TopicBlock)(id msg);
 typedef id(^TopicResultBlock)(id msg);
-typedef void(^CallResult)(id result);
-typedef void(^AsyncCallbackBlock)(CallResult callback);
 
+typedef void(^CallResult)(id result);
 
 #import <Foundation/Foundation.h>
 
@@ -37,17 +36,10 @@ typedef void(^AsyncCallbackBlock)(CallResult callback);
  事件订阅
  
  @param topic 事件主题
- @param topicResultBlock 事件处理block，带结果回调
+ @param topicBlock 事件处理block，带结果回调
  */
 -(void)subscribe:(NSString *)topic withResultBlock:(TopicResultBlock)topicResultBlock;
 
-/**
- 事件订阅
- 
- @param topic 事件主题
- @param asyncCallbackBlock 事件处理block，带异步结果回调
- */
--(void)subscribe:(NSString *)topic withAsyncResultBlock:(AsyncCallbackBlock)asyncCallbackBlock;
 
 /**
  事件广播（一对多）
@@ -92,31 +84,31 @@ typedef void(^AsyncCallbackBlock)(CallResult callback);
  */
 -(void)unsubscribeAll;
 
-///**
-// 服务注册
-//
-// @param serviceName 服务名
-// */
-//-(void)registService:(NSString *)className withAction:(SEL)action;
+/**
+ 服务注册
+ 
+ @param serviceName 服务名
+ */
+-(void)registService:(NSString *)className withAction:(SEL)action;
 
 
-///**
-// 服务请求
-//
-// @param serviceName 服务名
-// @param options 传入选项
-// */
-//-(void)getService:(NSString *)serviceName withOptions:(id)options;
+/**
+ 服务请求
+
+ @param serviceName 服务名
+ @param options 传入选项
+ */
+-(void)getService:(NSString *)serviceName withOptions:(id)options;
 
 
-///**
-// 服务请求
-//
-// @param serviceName 服务名
-// @param options 传入选项
-// @param callback 结果回调
-// */
-//-(void)getService:(NSString *)serviceName options:(id)options callback:(CallResult)callback;
+/**
+ 服务请求
+
+ @param serviceName 服务名
+ @param options 传入选项
+ @param callback 结果回调
+ */
+-(void)getService:(NSString *)serviceName options:(id)options callback:(CallResult)callback;
 
 -(void)setEventBusDebug:(BOOL)enable;
 

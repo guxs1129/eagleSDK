@@ -7,11 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
-#define kOldProtocolScheme @"eagle"
+#define kOldProtocolScheme @"scheme"
 #define kNewProtocolScheme @"https"
 #define kQueueHasMessage   @"___queue_message__"
-#define kBridgeHost        @"_eagle_bridge_"
-#define kBridgeLoaded      @"_eagle_bridge_done_"
+#define kBridgeLoaded      @"__bridge_loaded__"
 
 typedef void (^ResponseCallback)(id responseData);
 typedef void (^Handler)(id data, ResponseCallback responseCallback);
@@ -37,7 +36,6 @@ typedef NSDictionary Message;
 - (void)flushMessageQueue:(NSString *)messageQueueString;
 - (void)injectJavascriptFile;
 - (BOOL)isWebViewJavascriptBridgeURL:(NSURL*)url;
-- (BOOL)isBridgeHostURL:(NSURL*)url;
 - (BOOL)isQueueMessageURL:(NSURL*)urll;
 - (BOOL)isBridgeLoadedURL:(NSURL*)urll;
 - (void)logUnkownMessage:(NSURL*)url;

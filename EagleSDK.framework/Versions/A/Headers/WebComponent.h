@@ -1,6 +1,6 @@
 //
 //  WebComponent.h
-//  EG
+//  Eagle
 //
 //  Created by 顾新生 on 2017/11/2.
 //  Copyright © 2017年 pantao. All rights reserved.
@@ -8,34 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "WKWebViewJavascriptBridge.h"
-#import "EGComponent.h"
-#import "EGEventBus.h"
+#import "Component.h"
+#import "EagleEventBus.h"
 #import "NSURLProtocol+WKWebVIew.h"
-
-#define EGW_OpenURL_Channel @"EGW_OpenURL_Channel"
-
-#pragma mark -- Internal JS Call Native Methods
-#define EGWGetSystemInfoHandler  @"_getSystemInfo_"
-#define EGWGetNetworkTypeHandler  @"_getNetworkType_"
-#define EGWGetAppVersionHandler  @"_getAppVersion_"
-#define EGWGenerateQRCodeHandler  @"_generateQRCode_"
-#define EGWOpenQRCodeHandler  @"_openQRCode_"
-#define EGWOpenAlbumHandler  @"_openAlbum_"
-#define EGWOpenCameraHandler  @"_openCamera_"
-#define EGWGetLocationInfoHandler  @"_getLocationInfo_"
-#define EGWCloseWindowHandler  @"_closeWindow_"
-#define EGWOpenWindowHandler  @"_openWindow_"
-#define EGWSetNavBarStyleHandler  @"_setNavBarStyle_"
-#define EGWsetOptionMenuHandler  @"_setOptionMenu_"
-
-
-@protocol WebComponentDelegate;
-@protocol WebComponent<WebComponentDelegate>
-
-@property(nonatomic,strong)NSURL *loadURL;
-@property(nonatomic,strong)NSArray *handlers;
-@end
-
 @protocol WebComponentDelegate<NSObject>
 
 /**
@@ -70,13 +45,13 @@
 -(void)urlCall:(NSString *)handler params:(NSArray *)params msg:(id)msg;
 
 
-
 @end
 
-@interface WebComponent : EGComponent
+@interface WebComponent : Component
 @property(nonatomic,weak)NSObject<WebComponentDelegate> *webDelegate;
 @property(nonatomic,strong)NSURL *loadURL;
 @property(nonatomic,copy)NSString *mimeType;
+@property(nonatomic,strong)NSArray *handlers;
 
 /**
  WebComponent的识别id，唯一，默认是自己的hash值
@@ -89,15 +64,6 @@
 -(void)goBack;
 
 -(void)setFullScreen:(BOOL)flag;
-
-
-/**
- Check the object is this webview;
-
- @param object Object
- @return BOOL ==
- */
--(BOOL)isEqualWebView:(id)object;
 @end
 
 

@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-//FOUNDATION_EXPORT void EGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2);
+FOUNDATION_EXPORT void EGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2);
 
 @class AFHTTPSessionManager;
 
